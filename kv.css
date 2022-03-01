@@ -1,0 +1,190 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+	background-color: #ffffff;
+	font-family: sans-serif;
+	font-size: 11pt;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #555;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #888;
+}
+
+.no_projects {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	overflow: hidden;
+	background: #eeeeff;
+	margin: 10px;
+	padding: 10px;
+	color: grey;
+	text-align: center;
+}
+
+.no_projects div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.project_brick {
+	width: 100px;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	margin: 10px;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.project_brick_icon_block {
+	background-image: url('icon/filesqlite3db.png');
+}
+
+.project_brick:hover {
+	background: #eeeeff;
+	outline: 2px solid #ccccff;
+}
+
+.empty {
+	width: calc(100% - 200px);
+	height: 100%;
+	display: inline-block;
+	overflow: hidden;
+	padding: 100px;
+	color: grey;
+	text-align: center;
+}
+
+.empty div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.item_tile_view_selected, .item_tile_view {
+	width: 96px;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+.item_tile_view {
+	border: 2px solid white;
+}
+
+.item_tile_view:hover {
+	background: #eeeeff;
+	border: 2px solid #ccccff;
+}
+
+.item_tile_view_selected {
+	background: #cfcfff;
+	border: 2px solid #ababff;
+}
+
+.item_tile_view_selected:hover {
+	background: #dbdbff;
+	border: 2px solid #babaff;
+}
+
+.item_tile_view_name_block {
+	display: inline-block;
+	vertical-align: bottom;
+	word-break: break-all;
+	white-space: pre-wrap;
+}
+
+.item_tile_view_icon_block {
+	width: 100px;
+	height: 100px;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+div[contenteditable="true"] {
+	outline: 1px solid black;
+	background: white;
+}
+
+.path_stack_item {
+	display: inline-block;
+	background-color: #eeeeee;
+	border: 1px solid grey;
+	padding: 10px 5px;
+	margin: 2px;
+	cursor: pointer;
+}
+
+.path_stack_item:hover {
+	background-color: #fafafa;
+}
+
+.root_path_stack_item {
+	color: grey;
+}
+
+.context_menu {
+	position: absolute;
+	background: #fafafa;
+	border: 1px solid grey;
+}
+
+.context_menu_delimiter {
+	height: 1px;
+	margin: 2px;
+	width: 200px;
+	background: grey;
+}
+
+.context_menu_li {
+	overflow: hidden;
+	width: calc(100% - 20px);
+	padding: 0px 10px;
+}
+
+.context_menu_li:hover {
+	background: #bb4400;
+	color: white;
+}
+
+.context_menu_li div {
+	display: inline-block;
+}
+
+.instrument_panel {
+	background-color: #eeeeee;
+	border-bottom: 1px solid grey;
+	padding: 20px;
+	width: calc(100% - 40px);
+	height: 159px;
+}
+
+.item_container {
+	max-height: calc(100vh - 200px);
+	overflow: auto;
+}
